@@ -180,8 +180,8 @@ The app opens at **http://localhost:3000**
 
 | Service | Platform | URL |
 |---------|----------|-----|
-| Frontend | Vercel | https://prowash.vercel.app |
-| Backend | Render | https://prowash-backend.onrender.com |
+| Frontend | Vercel | https://powerwash-one.vercel.app/ |
+| Backend | Render | https://powerwash-8u9f.onrender.com |
 | Database | MongoDB Atlas | Cloud hosted |
 
 ### Deploy backend to Render
