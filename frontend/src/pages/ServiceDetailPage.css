@@ -1,0 +1,221 @@
+/* src/pages/ServiceDetailPage.css */
+
+.service-detail-page {
+  min-height: 80vh;
+}
+
+/* Hero banner */
+.service-hero {
+  background: linear-gradient(135deg, #0d47a1 0%, #1976d2 60%, #42a5f5 100%);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px 48px;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+.service-hero-icon {
+  font-size: 3.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-hero h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem;
+}
+
+.service-tagline {
+  font-size: 1.1rem;
+  color: #bbdefb;
+  margin: 0 0 1.25rem;
+}
+
+.service-meta {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.meta-badge {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  padding: 0.35rem 1rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Body content */
+.service-detail-body {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.detail-section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e7ff;
+}
+
+.detail-description {
+  color: #444;
+  line-height: 1.75;
+  font-size: 0.97rem;
+  margin: 0;
+}
+
+/* Includes list */
+.includes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.includes-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.include-check {
+  color: #1b7a34;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* FAQ accordion */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faq-item {
+  border: 1px solid #e0e7ff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: #f8faff;
+  border: none;
+  padding: 0.9rem 1rem;
+  text-align: left;
+  font-size: 0.93rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  transition: background 0.15s;
+}
+
+.faq-question:hover {
+  background: #eef1fb;
+}
+
+.faq-chevron {
+  font-size: 0.7rem;
+  color: #888;
+  flex-shrink: 0;
+}
+
+.faq-answer {
+  padding: 0.75rem 1rem 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.65;
+  margin: 0;
+  border-top: 1px solid #e0e7ff;
+  background: #fff;
+}
+
+/* Book CTA */
+.detail-cta {
+  margin-top: 0.5rem;
+}
+
+.cta-card {
+  background: #0d47a1;
+  border-radius: 14px;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cta-card h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.2rem;
+}
+
+.cta-card p {
+  color: #bbdefb;
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+.cta-book-btn {
+  white-space: nowrap;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* 404 state */
+.service-not-found {
+  text-align: center;
+  padding: 5rem 2rem;
+  color: #555;
+}
+
+.service-not-found h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a2e;
+}
+
+@media (max-width: 600px) {
+  .service-hero h1 { font-size: 1.6rem; }
+  .cta-card { flex-direction: column; text-align: center; }
+}

@@ -1,0 +1,200 @@
+/* src/components/AIAssistant.css */
+
+.ai-assistant {
+  margin-bottom: 1.75rem;
+}
+
+/* Toggle button */
+.ai-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.ai-toggle-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.ai-icon {
+  font-size: 1.1rem;
+}
+
+/* Panel */
+.ai-panel {
+  margin-top: 0.75rem;
+  background: #faf8ff;
+  border: 1.5px solid #d8ccf7;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+}
+
+.ai-panel-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #3b2f7a;
+  margin: 0 0 0.25rem;
+}
+
+.ai-panel-subtitle {
+  font-size: 0.9rem;
+  color: #6b5fa6;
+  margin: 0 0 1rem;
+}
+
+/* Textarea */
+.ai-textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1.5px solid #c9bdf0;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  color: #1a1a2e;
+  resize: vertical;
+  background: #fff;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.ai-textarea:focus {
+  outline: none;
+  border-color: #764ba2;
+}
+
+/* Ask button */
+.ai-ask-btn {
+  margin-top: 0.75rem;
+  padding: 0.6rem 1.25rem;
+  background: #764ba2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ai-ask-btn:hover:not(:disabled) {
+  background: #5c3880;
+}
+
+.ai-ask-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Loading spinner */
+.ai-loading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ai-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Error */
+.ai-error {
+  margin-top: 0.75rem;
+  color: #c0392b;
+  font-size: 0.88rem;
+}
+
+/* Result card */
+.ai-result {
+  margin-top: 1rem;
+  background: #fff;
+  border: 1.5px solid #c9bdf0;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ai-result-service {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ai-result-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #8a74c9;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ai-result-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3b2f7a;
+  background: #ede8fb;
+  padding: 0.2rem 0.75rem;
+  border-radius: 20px;
+}
+
+.ai-result-reason {
+  font-size: 0.92rem;
+  color: #3a3a5c;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.ai-result-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  background: #fdf6e3;
+  border: 1px solid #f0d88a;
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.88rem;
+  color: #6b5000;
+}
+
+.ai-tip-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* Apply button */
+.ai-apply-btn {
+  padding: 0.6rem 1.1rem;
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+.ai-apply-btn:hover {
+  background: #1e8449;
+}

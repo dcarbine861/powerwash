@@ -1,0 +1,225 @@
+/* src/pages/Home.css */
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #0d47a1 0%, #1976d2 60%, #42a5f5 100%);
+  color: white;
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto 48px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #bbdefb;
+  margin-bottom: 36px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-secondary {
+  padding: 12px 28px;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.trust-badges {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background-color: rgba(255,255,255,0.15);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* ===== SERVICES ===== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid #e0e7ff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.service-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a1a2e;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.service-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-price {
+  font-weight: 700;
+  color: #0d47a1;
+  font-size: 16px;
+}
+
+.service-card-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.service-details-link {
+  color: #888;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.service-details-link:hover {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+.service-book-link {
+  color: #1565c0;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.service-book-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== CTA ===== */
+.cta-section {
+  background-color: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+.cta-section p {
+  color: #bbdefb;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 16px 40px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .trust-badges {
+    gap: 10px;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section {
+    padding: 50px 16px;
+  }
+
+  .cta-section h2 {
+    font-size: 26px;
+  }
+
+  .cta-section p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+}

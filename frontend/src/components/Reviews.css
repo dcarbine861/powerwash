@@ -1,0 +1,129 @@
+/* src/components/Reviews.css */
+
+.reviews-section {
+  background-color: #f0f4ff;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.review-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.stars {
+  margin-bottom: 12px;
+}
+
+.star {
+  font-size: 20px;
+  color: #ddd;
+}
+
+.star.filled {
+  color: #f59e0b;
+}
+
+.review-comment {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.review-name {
+  font-weight: 600;
+  color: #1a1a2e;
+  font-size: 14px;
+}
+
+.review-service {
+  font-size: 12px;
+  background-color: #e3f2fd;
+  color: #1565c0;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.loading-text {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/* Review Submission Form */
+.review-form-wrapper {
+  background: white;
+  border-radius: 16px;
+  padding: 36px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.review-form-wrapper h3 {
+  font-size: 22px;
+  margin-bottom: 24px;
+  color: #1a1a2e;
+}
+
+.review-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.review-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.review-form label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.review-form input:focus,
+.review-form select:focus,
+.review-form textarea:focus {
+  outline: none;
+  border-color: #1565c0;
+}
+
+@media (max-width: 600px) {
+  .review-form .form-row {
+    grid-template-columns: 1fr;
+  }
+}
